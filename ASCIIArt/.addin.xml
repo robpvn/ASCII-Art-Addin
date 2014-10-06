@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Addin id="ASCIIArtAddin" version="0.1" category="File Formats">
+    <Header>
+        <Name>ASCII Art</Name>
+        <Description>Converts images to ASCII art and back</Description>
+        <Author>Robert Nordan</Author>
+        <Url>TODO</Url>
+    </Header>
+    <Dependencies>
+        <Addin id="Pinta" version="1.5" />
+    </Dependencies>
+</Addin>
