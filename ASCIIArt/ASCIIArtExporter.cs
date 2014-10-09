@@ -31,7 +31,6 @@ namespace ASCIIArt
 					w = dialog.ExportImageWidth;
 					h = dialog.ExportImageHeight;
 					chars = dialog.ExportImageChars;
-					Console.WriteLine ("Selected chars: " + chars);
 				} else {
 					return;
 				}

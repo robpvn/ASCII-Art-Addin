@@ -21,7 +21,7 @@ namespace ASCIIArt
 				} else if (radioButtonBlocks.Active) {
 					return DefaultCharacters.Blocks;
 				} else {
-					return entryFieldChars.ToString ();
+					return entryFieldChars.Text;
 				}
 			} 
 		}
