@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Pinta;
 using Pinta.Core;
 using Gtk;
 
@@ -17,10 +18,31 @@ namespace ASCIIArt
 		public unsafe void Export (Document document, string fileName, Window parent)
 		{
 
-			Cairo.ImageSurface surface = document.GetFlattenedImage ();
-			int w = 64, h = 64; //TODO: Get this from config!
+			int w = 64, h = 64; //Default value to configure, pixels per block			
+			string chars = DefaultCharacters.AsciiChars; //Get the selection from config
+
+			ASCIIOptionsDialog dialog = new ASCIIOptionsDialog (w, h);
+			try {
+				dialog.WindowPosition = Gtk.WindowPosition.CenterOnParent;
+
+				int response = dialog.Run ();
+
+				if (response == (int)Gtk.ResponseType.Ok) {
+					w = dialog.ExportImageWidth;
+					h = dialog.ExportImageHeight;
+					chars = dialog.ExportImageChars;
+					Console.WriteLine ("Selected chars: " + chars);
+				} else {
+					return;
+				}
+
+			} finally {
+				dialog.Destroy ();
+			}
+
+
+			Cairo.ImageSurface surface = document.GetFlattenedImage ();			
 			int W = surface.Width, H = surface.Height;
-			string chars = DefaultCharacters.Blocks; //TODO: Get the selection from config
 
 
 			// Special case where 1 cell corresponds directly to 1 pixel

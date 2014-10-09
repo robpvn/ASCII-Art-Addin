@@ -55,6 +55,7 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="Mono.Cairo" />
+    <Reference Include="Mono.Posix" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,9 +65,16 @@
     <Compile Include="PropertyNames.cs" />
     <Compile Include="DefaultCharacters.cs" />
     <Compile Include="ASCIIArtImporter.cs" />
+    <Compile Include="ASCIIArtData.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="ASCIIOptionsDialog.cs" />
+    <Compile Include="gtk-gui\ASCIIArt.ASCIIOptionsDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <EmbeddedResource Include=".addin.xml" />
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
