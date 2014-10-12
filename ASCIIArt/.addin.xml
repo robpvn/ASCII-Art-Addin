@@ -2,11 +2,22 @@
 <Addin id="ASCIIArtAddin" version="0.1" category="File Formats">
     <Header>
         <Name>ASCII Art</Name>
-        <Description>Converts images to ASCII art and back</Description>
+        <Description>Converts images to ASCII art and back.</Description>
         <Author>Robert Nordan</Author>
         <Url>TODO</Url>
+        <Name locale="nb">ASCII-Kunst</Name>
+        <Description locale="nb">Konverterer bilder til ASCII-kunst (tekstfiler) og tilbake.</Description>
     </Header>
     <Dependencies>
         <Addin id="Pinta" version="1.5" />
     </Dependencies>
+    <Localizer type="StringTable">
+		<Locale id="nb">
+			<Msg id="Preset characters" str="Tilgjengelige tegnsett" />
+			<Msg id="Custom (Cannot be reopened in Pinta)" str="Egendefinert (kan ikke gjenåpnes i Pinta)" />
+			<Msg id="ASCII file resolution" str="Tekstfil-oppløsning" />
+			<Msg id="Horisontal cell size (in pixels)" str="Horisontal cellestørrelse (i piksler)" />
+			<Msg id="Vertical cell size (in pixels)" str="Horisontal cellestørrelse (i piksler)" />
+		</Locale>
+</Localizer>
 </Addin>

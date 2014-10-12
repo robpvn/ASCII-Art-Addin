@@ -1,5 +1,7 @@
 using System;
 using Gtk;
+using Pinta;
+using Mono.Addins;
 
 namespace ASCIIArt
 {
@@ -8,6 +10,13 @@ namespace ASCIIArt
 		public ASCIIOptionsDialog (int initialW, int initialH)
 		{
 			this.Build ();
+
+			label1.Text = AddinManager.CurrentLocalizer.GetString ("Preset characters");
+			radiobutton3.Label = AddinManager.CurrentLocalizer.GetString ("Custom (Cannot be reopened in Pinta)");
+			label2.Text = AddinManager.CurrentLocalizer.GetString ("ASCII file resolution");
+			label3.Text = AddinManager.CurrentLocalizer.GetString ("Horisontal cell size (in pixels)");
+			label4.Text = AddinManager.CurrentLocalizer.GetString ("Vertical cell size (in pixels)");
+
 
 			spinButtonW.Value = initialW;
 			spinButtonH.Value = initialH;
