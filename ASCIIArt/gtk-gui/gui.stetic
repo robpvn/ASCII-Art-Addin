@@ -34,7 +34,7 @@
           <widget class="Gtk.RadioButton" id="radioButtonAscii">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="Label" translatable="yes"> .,;!vlLFE$</property>
+            <property name="Label"> .,;!vlLFE$</property>
             <property name="Active">True</property>
             <property name="DrawIndicator">True</property>
             <property name="HasLabel">True</property>
@@ -52,7 +52,7 @@
           <widget class="Gtk.RadioButton" id="radioButtonBlocks">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="Label" translatable="yes"> ░▒▓█</property>
+            <property name="Label"> ░▒▓█</property>
             <property name="DrawIndicator">True</property>
             <property name="HasLabel">True</property>
             <property name="UseUnderline">True</property>
@@ -73,7 +73,7 @@
               <widget class="Gtk.RadioButton" id="radiobutton3">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
-                <property name="Label" translatable="yes">Custom (Cannot be opened in Pinta again)</property>
+                <property name="Label" translatable="yes">Custom (Cannot be reopened in Pinta)</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -147,7 +147,7 @@
             <child>
               <widget class="Gtk.Label" id="label3">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">Horisontal cell size</property>
+                <property name="LabelProp" translatable="yes">Horisontal cell size (in pixels)</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -191,7 +191,7 @@
             <child>
               <widget class="Gtk.Label" id="label4">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">Vertical cell size</property>
+                <property name="LabelProp" translatable="yes">Vertical cell size (in pixels)</property>
               </widget>
               <packing>
                 <property name="Position">0</property>

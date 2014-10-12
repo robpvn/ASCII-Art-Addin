@@ -41,7 +41,7 @@ namespace ASCIIArt
 			w2.Expand = false;
 			w2.Fill = false;
 			// Container child dialog1_VBox.Gtk.Box+BoxChild
-			this.radioButtonAscii = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString (" .,;!vlLFE$"));
+			this.radioButtonAscii = new global::Gtk.RadioButton (" .,;!vlLFE$");
 			this.radioButtonAscii.CanFocus = true;
 			this.radioButtonAscii.Name = "radioButtonAscii";
 			this.radioButtonAscii.DrawIndicator = true;
@@ -53,7 +53,7 @@ namespace ASCIIArt
 			w3.Expand = false;
 			w3.Fill = false;
 			// Container child dialog1_VBox.Gtk.Box+BoxChild
-			this.radioButtonBlocks = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString (" ░▒▓█"));
+			this.radioButtonBlocks = new global::Gtk.RadioButton (" ░▒▓█");
 			this.radioButtonBlocks.CanFocus = true;
 			this.radioButtonBlocks.Name = "radioButtonBlocks";
 			this.radioButtonBlocks.DrawIndicator = true;
@@ -69,7 +69,7 @@ namespace ASCIIArt
 			this.hbox3.Name = "hbox3";
 			this.hbox3.Spacing = 6;
 			// Container child hbox3.Gtk.Box+BoxChild
-			this.radiobutton3 = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString ("Custom (Cannot be opened in Pinta again)"));
+			this.radiobutton3 = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString ("Custom (Cannot be reopened in Pinta)"));
 			this.radiobutton3.CanFocus = true;
 			this.radiobutton3.Name = "radiobutton3";
 			this.radiobutton3.DrawIndicator = true;
@@ -117,7 +117,7 @@ namespace ASCIIArt
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
-			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Horisontal cell size");
+			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Horisontal cell size (in pixels)");
 			this.hbox1.Add (this.label3);
 			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.label3]));
 			w10.Position = 0;
@@ -147,7 +147,7 @@ namespace ASCIIArt
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.label4 = new global::Gtk.Label ();
 			this.label4.Name = "label4";
-			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Vertical cell size");
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Vertical cell size (in pixels)");
 			this.hbox2.Add (this.label4);
 			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.label4]));
 			w13.Position = 0;
