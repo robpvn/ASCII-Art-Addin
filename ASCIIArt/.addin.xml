@@ -4,7 +4,7 @@
         <Name>ASCII Art</Name>
         <Description>Converts images to ASCII art and back.</Description>
         <Author>Robert Nordan</Author>
-        <Url>TODO</Url>
+        <Url>https://github.com/robpvn/ASCII-Art-Addin/</Url>
         <Name locale="nb">ASCII-Kunst</Name>
         <Description locale="nb">Konverterer bilder til ASCII-kunst (tekstfiler) og tilbake.</Description>
     </Header>
